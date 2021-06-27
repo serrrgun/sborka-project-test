@@ -1,0 +1,16 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.content {
+	height: 100%;
+}
+
+.container {
+	//max-width: 1640px;
+	margin: 0 auto;
+	box-sizing: content-box;
+	min-height: 100%;
+}

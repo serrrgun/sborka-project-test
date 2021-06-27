@@ -1,0 +1,10 @@
+{% macro search() %}
+  <div class="search">
+		<input class="search__input" type="text" placeholder="search"/>
+		<a href="#" class="search__button">
+			<svg class="search__svg">
+				<use xlink:href="#icon-search"></use>
+			</svg>
+		</a>
+	</div>
+{% endmacro %}

@@ -1,0 +1,19 @@
+{% macro billing() %}
+	<section class="billing">
+		<h2 class="billing__title">Billing Information</h2>
+		<div class="billing__wrapper">
+			<label class="billing__radio" for="payment-card">
+				<input class="billing__radio-input" name="payment" type="radio" id="payment-card" checked/>
+				<div class="billing__radio-custom"></div>
+				<span class="billing__radio-text">Pay with Credit Card</span>
+			</label>
+			<label class="billing__radio" for="payment-pal">
+				<input class="billing__radio-input" name="payment" type="radio" id="payment-pal" />
+				<div class="billing__radio-custom"></div>
+				<div class="billing__radio-image">
+					<img src="assets/images/paypal.png" alt="paypal"/>
+				</div>
+			</label>
+		</div>
+	</section>
+{% endmacro %}

@@ -1,0 +1,28 @@
+.button {
+	padding: 7px 29px;
+	background: #fff;
+	border: 1px solid #CFCFCF;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	transition: .3s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #3366ff;
+		color: #fff;
+	}
+
+	&--blue {
+		border: 1px solid #3366ff;
+		background-color: #3366ff;
+		color: #fff;
+
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+	}
+}

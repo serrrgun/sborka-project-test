@@ -1,0 +1,34 @@
+{% macro total() %}
+	<div class="total">
+		<table class="total__table">
+			<tr class="total__row">
+				<td>Subtotal</td>
+				<td>
+					<span>$</span>
+					<span class="js-subtototal-price">1 050</span>
+				</td>
+			</tr>
+			<tr class="total__row">
+				<td>Tax</td>
+				<td>
+					<span>$</span>
+					<span class="js-tax-price" data-tax="100">100</span>
+				</td>
+			</tr>
+			<tr class="total__row">
+				<td>Shipping</td>
+				<td>
+					<span>$</span>
+					<span class="js-shipping-price" data-shipping="150">150</span>
+				</td>
+			</tr>
+			<tr class="total__row total__row--bold">
+				<td>Total</td>
+				<td>
+					<span>$</span>
+					<span class="js-total-price">1 300</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+{% endmacro %}

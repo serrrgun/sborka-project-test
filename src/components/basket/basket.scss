@@ -1,0 +1,137 @@
+.basket {
+	padding: 40px;
+	border-bottom: 1px solid #cfcfcf;
+
+	&__list {
+		transition: .3s;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		color: #000;
+	}
+
+	&__order {
+		position: relative;
+		display: flex;
+		margin-bottom: 40px;
+		padding-right: 25px;
+
+		&:nth-last-child(1) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__order-img {
+		display: block;
+		width: 100px;
+		margin-right: 12px;
+
+		& img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	&__order-descr {
+		width: 198px;
+	}
+
+	&__order-ph {
+		font-size: 14px;
+		line-height: 16px;
+		color: #000;
+		font-weight: normal;
+		margin-bottom: 15px;
+		min-height: 32px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	&__order-counter {
+		display: flex;
+		margin-right: 25px;
+	}
+
+	&__order-button {
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		width: 20px;
+		height: 20px;
+
+		svg {
+			width: 21px;
+			height: 20px;
+			color: #000;
+			transition: .3s;
+
+			&:hover {
+				fill: #3366ff;
+			}
+
+			&:active {
+				fill: #6989e9;
+			}
+		}
+	}
+
+	&__order-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__order-input {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border: none;
+		padding-left: 4px;
+		padding-right: 4px;
+		text-align: center;
+	}
+
+	&__order-price {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000;
+	}
+
+	&__order-delete {
+		position: absolute;
+		display: flex;
+		right: 0;
+		top: 0;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+
+		padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+
+		& svg {
+			width: 18px;
+			height: 18px;
+			fill: #cfcfcf;
+			transition: .3s;
+		}
+
+		&:hover {
+			svg {
+				fill: #000;
+			}
+		}
+	}
+}

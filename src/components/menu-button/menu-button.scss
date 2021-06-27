@@ -1,0 +1,52 @@
+.menu-button {
+	position: relative;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 29px;
+	height: 22px;
+	margin-left: 26px;
+	cursor: pointer;
+
+	& span {
+		position: absolute;
+		display: inline-block;
+		width: 29px;
+		height: 2px;
+		border-radius: 3px;
+		background-color: #000;
+		transition: .3s;
+
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+
+	&--active {
+		span {
+			&:nth-child(1) {
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+			}
+
+			&:nth-child(3) {
+				bottom: 50%;
+				transform: translateY(50%) rotate(-45deg);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 769px) {
+		display: flex;
+		z-index: 20;
+	}
+}

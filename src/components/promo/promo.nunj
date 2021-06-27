@@ -1,0 +1,9 @@
+{% macro promo() %}
+	<section class="promo">
+		<h2 class="promo__title">Promo code</h2>
+		<form class="promo__form">
+			<input class="promo__form-input" type="text" placeholder="Placeholder Text"/>
+			<button class="promo__form-button button button--blue" type="submit">Apply</button>
+		</form>
+	</section>
+{% endmacro %}

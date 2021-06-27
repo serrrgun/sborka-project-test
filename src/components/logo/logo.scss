@@ -1,0 +1,18 @@
+.logo {
+	display: flex;
+
+	&__svg {
+		width: 89px;
+		height: 32px;
+
+		fill: #000;
+
+		transition: .3s;
+	}
+
+	&:hover {
+		svg {
+			fill: #3366ff;
+		}
+	}
+}

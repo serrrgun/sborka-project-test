@@ -1,0 +1,11 @@
+<div class="header">
+	<div class="container">
+		{{ logo() }}
+		{{ menu() }}
+		<div class="header__buttons">
+			{{ search() }}
+			{{ basketButton() }}
+			{{ menuButton() }}
+		</div>
+	</div>
+</div>

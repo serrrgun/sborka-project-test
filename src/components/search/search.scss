@@ -1,0 +1,44 @@
+.search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	&__input {
+		position: absolute;
+		top: -24px;
+		padding: 4px 25px 4px 8px;
+		background-color:  #ededf1;
+		border: 1px solid #cfcfcf;
+		outline: none;
+		line-height: 20px;
+		opacity: 0;
+		transition: .3s;
+	}
+
+	&__button {
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		z-index: 1;
+	}
+
+	&__svg {
+		width: 24px;
+		height: 24px;
+		fill: #000000;
+	}
+
+	&:hover {
+
+		svg {
+			fill: #3366ff;
+		}
+
+	}
+
+	&:hover > .search__input {
+		top: -3px;
+		opacity: 1;
+	}
+}

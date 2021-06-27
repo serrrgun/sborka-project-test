@@ -1,0 +1,35 @@
+.basket-button {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin-left: 26px;
+	width: 24px;
+	height: 21px;
+
+	&__svg {
+		width: 24px;
+		height: 21px;
+		fill: #000;
+		transition: .3s;
+	}
+
+	&__counter {
+		position: absolute;
+		right: -8px;
+		top: -4px;
+		width: 13px;
+		height: 13px;
+		background-color: #3366ff;
+		border-radius: 50%;
+		font-size: 10px;
+		line-height: 13px;
+		color: #fff;
+		text-align: center;
+	}
+
+	&:hover {
+		.basket-button__svg {
+			fill: #3366ff;
+		}
+	}
+}

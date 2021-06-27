@@ -1,0 +1,8 @@
+{% macro basketButton() %}
+  <a href="#" class="basket-button">
+		<svg class="basket-button__svg">
+			<use xlink:href="#icon-basket"></use>
+		</svg>
+		<span class="basket-button__counter js-counter-basket">2</span>
+	</a>
+{% endmacro %}

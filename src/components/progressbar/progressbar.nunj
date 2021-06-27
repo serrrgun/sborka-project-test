@@ -1,0 +1,23 @@
+{% macro progressbar() %}
+	<div class="progressbar">
+		<div class="progressbar__step">
+			<span class="progressbar__step-number progressbar__step-number--complited">1</span>
+			<span class="progressbar__step-name">Account</span>
+		</div>
+		<div class="progressbar__indicator-line progressbar__indicator-line--complited"></div>
+		<div class="progressbar__step">
+			<span class="progressbar__step-number progressbar__step-number--complited">2</span>
+			<span class="progressbar__step-name">Shipping</span>
+		</div>
+		<div class="progressbar__indicator-line progressbar__indicator-line--complited"></div>
+		<div class="progressbar__step">
+			<span class="progressbar__step-number progressbar__step-number--process">3</span>
+			<span class="progressbar__step-name">Billing</span>
+		</div>
+		<div class="progressbar__indicator-line"></div>
+		<div class="progressbar__step">
+			<span class="progressbar__step-number">4</span>
+			<span class="progressbar__step-name">Review</span>
+		</div>
+	</div>
+{% endmacro %}

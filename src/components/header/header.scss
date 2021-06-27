@@ -1,0 +1,17 @@
+.header {
+	background: #fff;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #cfcfcf;
+		padding: 24px 37px 24px 30px;
+		box-sizing: border-box;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: flex-end;
+	}
+}

@@ -1,0 +1,5 @@
+<div class="order">
+	{{ progressbar() }}
+	{{ billing() }}
+	{{ cardForm() }}
+</div>

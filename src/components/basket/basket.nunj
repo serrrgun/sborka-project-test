@@ -1,0 +1,39 @@
+{% macro basket() %}
+	<section class="basket">
+		<h2 class="basket__title">My basket</h2>
+		<ul class="basket__list">
+			{% for item in orders %}
+				<li class="basket__order">
+					<a href="#" class="basket__order-img">
+						<img src="{{ item.imgLink }}" alt="order-1">
+					</a>
+					<div class="basket__order-descr">
+						<p class="basket__order-ph">{{ item.description }}</p>
+						<div class="basket__order-wrapper">
+							<div class="basket__order-counter">
+								<button class="basket__order-button basket__order-button--minus">
+									<svg class="js-button--minus">
+										<use xlink:href="#icon-minus"></use>
+									</svg>
+								</button>
+								<input class="basket__order-input" type="text" value="1" data-price="{{ item.price }}"/>
+								<button class="basket__order-button basket__order-button--plus">
+									<svg class="js-button--plus">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+							<p class="basket__order-price"><span>$</span> {{ item.price }}</p>
+						</div>
+					</div>
+						<button class="basket__order-delete" data-type="delete">
+							<svg class="js-order-delete">
+								<use xlink:href="#icon-cross"></use>
+							</svg>
+						</button>
+				</li>
+			{% endfor %}
+
+		</ul>
+	</section>
+{% endmacro %}

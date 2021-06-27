@@ -1,0 +1,205 @@
+.card-form {
+	padding-left: 18%;
+
+	@media screen and (max-width: 1200px) {
+		padding-left: 0;
+	}
+
+	&__card {
+		width: 550px;
+		padding: 20px 30px 22px;
+		margin-bottom: 40px;
+		background: #fff;
+		border: 1px solid #cfcfcf;
+		box-sizing: border-box;
+		box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.19);
+		border-radius: 5px;
+
+		@media screen and (max-width: 686px) {
+			width: 100%;
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: block;
+		margin-bottom: 2px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 24px;
+		color: #555770;
+	}
+
+
+	&__input-number {
+		width: 100px;
+		height: 40px;
+		padding: 8px 10px;
+		margin-right: 25px;
+		background-color: #ededf1;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		line-height: 24px;
+		font-family: 'Roboto';
+
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+
+		@media screen and (max-width: 686px) {
+			width: 20%;
+			margin-right: 5%;
+		}
+	}
+
+	&__input-text {
+		width: 100%;
+		height: 40px;
+		padding: 8px 10px;
+		background-color: #ededf1;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		line-height: 24px;
+		font-family: 'Roboto';
+
+		&::placeholder {
+			font-size: 14px;
+			line-height: 24px;
+			color: #8e90a6;
+		}
+	}
+
+	&__date {
+		@media screen and (max-width: 686px) {
+			margin-right: 30px;
+		}
+	}
+
+	&__date,
+	&__cvv {
+		display: inline-block;
+		margin-right: 25px;
+
+		@media screen and (max-width: 686px) {
+			width: 40%;
+			margin-right: 5%;
+
+			.card-form__input-number {
+				width: 100%;
+			}
+		}
+	}
+
+	fieldset {
+		margin-bottom: 17px;
+	}
+
+	&__info {
+		display: inline-block;
+		width: 13px;
+		height: 13px;
+		background-color: #dbdbdb;
+		font-size: 10px;
+		line-height: 13px;
+		text-align: center;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&-tooltip {
+			position: absolute;
+			top: -20px;
+			left: 20%;
+			display: block;
+			width: 100px;
+			padding: 3px;
+			background-color: #8e90a6;
+			text-align: center;
+			opacity: 0;
+			transition: .3s;
+		}
+
+		&:hover + .card-form__info-tooltip {
+			top: -30px;
+			opacity: 1;
+		}
+	}
+
+	&__checkbox {
+		padding-left: 3%;
+		margin-bottom: 39px;
+
+		@media screen and (max-width: 1200px) {
+			padding-left: 4%;
+		}
+	}
+
+	&__checkbox-wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 12px;
+	}
+
+	&__checkbox-input {
+		appearance: none;
+		width: 18px;
+		height: 18px;
+		margin-right: 8px;
+		padding: 4px;
+		background: #fff;
+		border: 1px solid #cfcfcf;
+		cursor: pointer;
+		transition: .3s;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #3366ff;
+			transform: scale(0);
+			transition: .3s;
+		}
+
+		&:hover {
+			border: 1px solid #a5a5a5;
+		}
+
+		&:checked::after {
+			transform: scale(1);
+		}
+	}
+
+	&__checkbox-label {
+		font-size: 14px;
+		line-height: 16px;
+		color: #8c8c8c;
+
+		& a {
+			color: #000;
+			text-decoration: none;
+			transition: .3s;
+
+			&:hover {
+				color: #3366ff;
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 25% 0 3%;
+
+		@media screen and (max-width: 769px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		@media screen and (max-width: 1200px) {
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+	}
+}

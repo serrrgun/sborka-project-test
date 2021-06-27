@@ -1,0 +1,37 @@
+{% extends "../ext/base.nunj" %}
+
+{% from "../../components/menu/menu.nunj" import menu %}
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/logo/logo.nunj" import logo %}
+{% from "../../components/search/search.nunj" import search %}
+{% from "../../components/basket-button/basket-button.nunj" import basketButton %}
+{% from "../../components/menu-button/menu-button.nunj" import menuButton %}
+{% from "../../components/progressbar/progressbar.nunj" import progressbar %}
+{% from "../../components/billing/billing.nunj" import billing %}
+{% from "../../components/card-form/card-form.nunj" import cardForm %}
+{% from "../../components/basket/basket.nunj" import basket %}
+{% from "../../components/promo/promo.nunj" import promo %}
+{% from "../../components/total/total.nunj" import total %}
+
+{# Пример расширения существующего блока #}
+{# Например можно использовать для добавления уникальных тайтлов для каждой страницы #}
+{# {% block title %}Test / {{ super() }}{% endblock title %} #}
+
+{% block content %}
+
+	{% include '../../components/header/header.nunj' %}
+
+	<main class="content">
+		<div class="container">
+			<section class="content__order">
+			<h2 class="visually-hidden">Order</h2>
+				{% include '../../components/order/order.nunj' %}
+			</section>
+			<section class="content__cart">
+				<h2 class="visually-hidden">Cart</h2>
+				{% include '../../components/cart/cart.nunj' %}
+			</section>
+		</div>
+	</main>
+
+{% endblock content %}
