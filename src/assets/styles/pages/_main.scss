@@ -6,6 +6,10 @@
 	&__order {
 		flex-grow: 1;
 		border-right: 1px solid #cfcfcf;
+
+		@media screen and (max-width: 1100px) {
+			border-right: none;
+		}
 	}
 
 	&__cart {
@@ -16,9 +20,11 @@
 		@media screen and (max-width: 1100px) {
 			position: absolute;
 			right: 0;
+			height: 100%;
 			background-color: #fff;
 			transform: translateX(100%);
 			z-index: 10;
+			overflow-y: scroll;
 		}
 
 		&.content__cart--open {
@@ -27,7 +33,7 @@
 			}
 		}
 
-		@media screen and (max-width: 769px) {
+		@media screen and (max-width: 410px) {
 			width: 100%;
 		}
 	}

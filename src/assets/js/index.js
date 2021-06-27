@@ -42,9 +42,11 @@ if (module.hot) {
 
 const basketButton = document.querySelector('.basket-button');
 const cart = document.querySelector('.content__cart');
+const content = document.querySelector('.content');
 
 basketButton.addEventListener('click', () => {
 	cart.classList.toggle('content__cart--open');
+	content.classList.toggle('hidden');
 });
 
 // open menu
